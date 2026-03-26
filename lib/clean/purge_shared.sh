@@ -42,6 +42,7 @@ readonly MOLE_PURGE_TARGETS=(
     "Pods"          # CocoaPods
     ".cxx"          # React Native Android NDK build cache
     ".expo"         # Expo
+    ".terragrunt-cache" # Terragrunt
 )
 
 readonly MOLE_PURGE_DEFAULT_SEARCH_PATHS=(
@@ -77,6 +78,7 @@ readonly MOLE_PURGE_PROJECT_INDICATORS=(
     "build.zig"
     "build.zig.zon"
     ".git"
+    "terragrunt.hcl"
 )
 
 # High-noise targets intentionally excluded from quick hint scans in mo clean.
